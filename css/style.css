@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
-/* Configure Tailwind v4 Theme using CSS Variables */
-@theme {
+:root {
   --color-emerald-deep: #0B2B1B;
   --color-emerald-medium: #144930;
   --color-emerald-light: #206E4A;
@@ -13,10 +12,6 @@
   
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Outfit", sans-serif;
-  
-  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
-  --animate-gold-pulse: gold-pulse 2s infinite ease-in-out;
-  --animate-float: float 4s ease-in-out infinite;
 }
 
 @keyframes fade-in-up {
