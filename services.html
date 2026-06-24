@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Aurelius Wealth Advisors' capabilities: Wealth management, tax planning, retirement distribution, estate coordination, and business exit advisory.">
+  <title>Our Services | Aurelius Wealth Advisors</title>
+  <!-- Tailwind CSS v4 Browser Compiler -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- Custom CSS style overrides -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-stone-warm text-slate-800 antialiased selection:bg-gold-primary/30 selection:text-emerald-deep">
+
+  <!-- Sticky Navigation Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 group">
+        <span class="font-serif text-2xl font-bold tracking-wider text-white group-hover:text-gold-light transition-colors">
+          AURELIUS
+        </span>
+        <span class="h-5 w-px bg-gold-primary/40 hidden sm:inline"></span>
+        <span class="text-[10px] tracking-[0.2em] font-sans text-gold-primary font-bold uppercase hidden sm:inline pt-0.5">
+          Wealth Advisors
+        </span>
+      </a>
+
+      <!-- Desktop Nav links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Home</a>
+        <a href="about.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">About Us</a>
+        <a href="services.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Services</a>
+        <a href="contact.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a href="contact.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold tracking-widest text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+          BOOK CONSULTATION
+        </a>
+      </div>
+
+      <!-- Hamburger button for mobile -->
+      <button id="mobile-menu-btn" class="md:hidden text-white hover:text-gold-primary focus:outline-none" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-emerald-deep/98 border-t border-emerald-medium shadow-2xl py-6 px-8 flex flex-col gap-4 transition-all duration-300 opacity-0 -translate-y-4">
+      <a href="index.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">Home</a>
+      <a href="about.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">About Us</a>
+      <a href="services.html" class="font-sans text-base font-medium text-gold-primary border-b border-white/5 pb-2">Services</a>
+      <a href="contact.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">Contact</a>
+      <a href="contact.html" class="mt-2 inline-flex items-center justify-center py-3 rounded-xl text-sm font-semibold tracking-wider text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all text-center">
+        Book Consultation
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Header Section -->
+  <section class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-16 bg-emerald-deep overflow-hidden">
+    <!-- Image background -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/finance_chart.png" alt="Financial graphs on tablet" class="w-full h-full object-cover opacity-20 mix-blend-overlay">
+      <div class="absolute inset-0 bg-gradient-to-t from-emerald-deep to-emerald-deep/90"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-12 text-center animate-fade-in-up">
+      <div class="inline-block px-3 py-1 bg-gold-primary/10 text-gold-light font-sans text-xs tracking-wider font-semibold rounded-full mb-4">
+        OUR EXPERTISE
+      </div>
+      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white font-bold leading-tight mb-4">
+        Integrated Wealth Coordination
+      </h1>
+      <p class="font-sans text-base sm:text-lg text-stone-300 leading-relaxed max-w-2xl mx-auto">
+        We harmonize investment portfolios, proactive tax location, corporate benefit packages, and generational transfer structures under one unified plan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Comprehensive Section -->
+  <section class="py-24 px-6 md:px-12 bg-white relative z-20">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Private Wealth Management -->
+        <div class="bg-stone-warm p-8 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8">
+          <div class="w-12 h-12 rounded-xl bg-emerald-deep text-white flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl text-emerald-deep font-bold font-serif mb-4">Private Wealth Management</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-6">
+            Bespoke public market assets strategy. We build custom portfolios utilizing institutional-grade indexing and low-cost models.
+          </p>
+          <ul class="space-y-2 text-xs font-sans text-slate-500 border-t border-slate-200/60 pt-4">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Low-cost institutional indexing models
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Direct indexing for custom tax shielding
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Risk-parity volatility overlays
+            </li>
+          </ul>
+        </div>
+
+        <!-- Retirement Transition Planning -->
+        <div class="bg-stone-warm p-8 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.1s;">
+          <div class="w-12 h-12 rounded-xl bg-emerald-deep text-white flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-11.314l.707.707m12.02 12.02l.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl text-emerald-deep font-bold font-serif mb-4">Retirement Transition</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-6">
+            Shifting from capital accumulation to distribution. We design withdrawal sequences to avoid sequencing risk.
+          </p>
+          <ul class="space-y-2 text-xs font-sans text-slate-500 border-t border-slate-200/60 pt-4">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              RMD (Required Minimum Distribution) strategies
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Sequenced asset class withdrawal ordering
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Pension & Social Security analysis
+            </li>
+          </ul>
+        </div>
+
+        <!-- Proactive Tax Optimization -->
+        <div class="bg-stone-warm p-8 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.2s;">
+          <div class="w-12 h-12 rounded-xl bg-emerald-deep text-white flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl text-emerald-deep font-bold font-serif mb-4">Tax Strategy & Location</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-6">
+            We review current tax brackets and place asset classes strategically in taxable vs. tax-deferred environments.
+          </p>
+          <ul class="space-y-2 text-xs font-sans text-slate-500 border-t border-slate-200/60 pt-4">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Tax-loss harvesting automatic overlays
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Asset location optimizations
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Charitable donor-advised fund (DAF) setups
+            </li>
+          </ul>
+        </div>
+
+        <!-- Trust & Estate Structuring -->
+        <div class="bg-stone-warm p-8 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8">
+          <div class="w-12 h-12 rounded-xl bg-emerald-deep text-white flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl text-emerald-deep font-bold font-serif mb-4">Trust & Estate Planning</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-6">
+            Coordinating generational capital transfer. We audit trust documents and title allocations.
+          </p>
+          <ul class="space-y-2 text-xs font-sans text-slate-500 border-t border-slate-200/60 pt-4">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Trust fund blueprinting & naming audits
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Generation-skipping transfer schedules
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              CPA and attorney integration coordination
+            </li>
+          </ul>
+        </div>
+
+        <!-- Executive Options (RSUs / ISOs) -->
+        <div class="bg-stone-warm p-8 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.1s;">
+          <div class="w-12 h-12 rounded-xl bg-emerald-deep text-white flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl text-emerald-deep font-bold font-serif mb-4">Corporate Equity & Options</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-6">
+            For venture and public tech executives. Strategies for concentrated stock positions and exercise schedules.
+          </p>
+          <ul class="space-y-2 text-xs font-sans text-slate-500 border-t border-slate-200/60 pt-4">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              ISO & NSO exercise schedule tracking
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              RSU vesting tax-withholding reviews
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              SEC Rule 10b5-1 selling program structure
+            </li>
+          </ul>
+        </div>
+
+        <!-- Business Exit & Succession -->
+        <div class="bg-stone-warm p-8 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.2s;">
+          <div class="w-12 h-12 rounded-xl bg-emerald-deep text-white flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl text-emerald-deep font-bold font-serif mb-4">Business Exit Strategy</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-6">
+            Preparing closely-held businesses for purchase sale or generational leadership transition.
+          </p>
+          <ul class="space-y-2 text-xs font-sans text-slate-500 border-t border-slate-200/60 pt-4">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Buy-Sell Agreement funding allocations
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Defined Benefit cash-balance plan structure
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+              Pre-sale capital restructuring tax audits
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Onboarding Process Timeline Section -->
+  <section class="py-24 px-6 md:px-12 bg-cream-light relative z-20 border-t border-slate-100">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16 reveal-on-scroll opacity-0 translate-y-8">
+        <div class="inline-block px-3 py-1 bg-gold-primary/10 text-gold-dark font-sans text-xs tracking-wider font-semibold rounded-full mb-4">
+          HOW WE WORK
+        </div>
+        <h2 class="text-3xl text-emerald-deep font-bold font-serif">Our Onboarding Roadmap</h2>
+        <div class="w-12 h-1 bg-gold-primary mx-auto mt-4"></div>
+      </div>
+
+      <!-- Vertical Timeline -->
+      <div class="relative border-l-2 border-emerald-deep/20 ml-4 md:ml-32 space-y-12">
+        
+        <!-- Step 1 -->
+        <div class="relative pl-8 md:pl-12 reveal-on-scroll opacity-0 translate-y-8">
+          <!-- Dot indicator -->
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-deep border-2 border-white shadow-md z-10 flex items-center justify-center">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+          </div>
+          <!-- Label side (Desktop only absolute alignment) -->
+          <div class="hidden md:block absolute -left-32 top-0 w-24 text-right text-xs font-sans font-bold text-gold-dark tracking-wider uppercase">
+            PHASE 1
+          </div>
+          
+          <h3 class="text-lg text-emerald-deep font-bold font-serif mb-2">Discovery & Comprehensive Audit</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed">
+            We catalog all assets, analyze past tax filings for structural drag, inspect current estate wills/trusts, and map out your core income priorities. No strategy is proposed until we have verified your complete financial ecosystem.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative pl-8 md:pl-12 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.1s;">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-deep border-2 border-white shadow-md z-10 flex items-center justify-center">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+          </div>
+          <div class="hidden md:block absolute -left-32 top-0 w-24 text-right text-xs font-sans font-bold text-gold-dark tracking-wider uppercase">
+            PHASE 2
+          </div>
+          
+          <h3 class="text-lg text-emerald-deep font-bold font-serif mb-2">The Aurelius Strategic Blueprint</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed">
+            We deliver an Investment Policy Statement (IPS) specifying customized asset allocations, an integrated tax location map, and structural trust updates. We review these options side-by-side until you approve.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative pl-8 md:pl-12 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.2s;">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-deep border-2 border-white shadow-md z-10 flex items-center justify-center">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+          </div>
+          <div class="hidden md:block absolute -left-32 top-0 w-24 text-right text-xs font-sans font-bold text-gold-dark tracking-wider uppercase">
+            PHASE 3
+          </div>
+          
+          <h3 class="text-lg text-emerald-deep font-bold font-serif mb-2">Seamless Implementation</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed">
+            We coordinate account transfers through major third-party custodians (Schwab or Fidelity). Assets are reallocated with careful attention to tax thresholds, avoiding sudden capital gains exposure.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative pl-8 md:pl-12 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.3s;">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-deep border-2 border-white shadow-md z-10 flex items-center justify-center">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+          </div>
+          <div class="hidden md:block absolute -left-32 top-0 w-24 text-right text-xs font-sans font-bold text-gold-dark tracking-wider uppercase">
+            PHASE 4
+          </div>
+          
+          <h3 class="text-lg text-emerald-deep font-bold font-serif mb-2">Continuous Optimizations</h3>
+          <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed">
+            We implement automated tax-loss harvesting, adjust allocations as markets shift, and hold annual review sessions to sync with estate changes or life events.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium CTA Card -->
+  <section class="py-24 px-6 md:px-12 bg-white relative z-20 border-t border-slate-100">
+    <div class="max-w-5xl mx-auto bg-emerald-deep rounded-3xl p-8 sm:p-12 border border-gold-primary/20 shadow-2xl relative overflow-hidden text-center reveal-on-scroll opacity-0 translate-y-8">
+      <!-- Background details -->
+      <div class="absolute inset-0 opacity-10">
+        <img src="assets/office_hero.png" alt="Office background" class="w-full h-full object-cover">
+      </div>
+      
+      <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold leading-tight">
+          Ready to Coordinate Your Financial Ecosystem?
+        </h2>
+        <p class="text-stone-300 font-sans text-xs sm:text-sm leading-relaxed max-w-xl mx-auto">
+          Take the first step toward commission-free, transparent fiduciary management. Book a brief 15-minute introductory call to review our audit options.
+        </p>
+        <div class="pt-4">
+          <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 rounded-full text-xs font-bold tracking-widest text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all duration-300 shadow-xl">
+            SCHEDULE INTRODUCTORY CALL
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-emerald-deep text-stone-300 pt-20 pb-10 px-6 md:px-12 border-t border-emerald-medium/30 relative z-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+      <!-- Info Column -->
+      <div class="md:col-span-4 space-y-6">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="font-serif text-2xl font-bold tracking-wider text-white">
+            AURELIUS
+          </span>
+        </a>
+        <p class="font-sans text-xs leading-relaxed text-stone-400">
+          Independent Wealth Management & Fiduciary Advisory. Serving high-net-worth families, entrepreneurs, and professional firms worldwide.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="w-8 h-8 rounded-full bg-emerald-medium flex items-center justify-center hover:bg-gold-primary hover:text-emerald-deep transition-all duration-300" aria-label="LinkedIn">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-emerald-medium flex items-center justify-center hover:bg-gold-primary hover:text-emerald-deep transition-all duration-300" aria-label="Twitter">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Column 1 -->
+      <div class="md:col-span-2 md:col-start-6 space-y-4">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Navigation</h4>
+        <ul class="space-y-2 text-xs font-sans">
+          <li><a href="index.html" class="hover:text-gold-primary transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-gold-primary transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-gold-primary transition-colors">Our Services</a></li>
+          <li><a href="contact.html" class="hover:text-gold-primary transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 2 -->
+      <div class="md:col-span-2 space-y-4">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Expertise</h4>
+        <ul class="space-y-2 text-xs font-sans text-stone-400">
+          <li>Wealth Planning</li>
+          <li>Retirement Strategy</li>
+          <li>Tax Advisory</li>
+          <li>Trust & Estate Plans</li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div class="md:col-span-3 space-y-4 text-xs font-sans">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Office Location</h4>
+        <p class="leading-relaxed">
+          600 Montgomery St, 41st Floor<br>
+          San Francisco, CA 94111
+        </p>
+        <p>
+          <span class="block">Inquiries: info@aureliuswealth.com</span>
+          <span class="block mt-1">Phone: (415) 555-0190</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Compliance Disclosures -->
+    <div class="max-w-7xl mx-auto pt-8 border-t border-emerald-medium/20 text-[10px] font-sans text-stone-500 leading-relaxed space-y-4">
+      <p>
+        Aurelius Wealth Advisors ("Aurelius") is an SEC registered investment advisor located in San Francisco, California. SEC registration does not imply a certain level of skill or training. Aurelius may only transact business in those states in which it is registered, or qualifies for an exemption or exclusion from registration requirements. The information contained herein should not be construed as personalized investment, tax, or legal advice. 
+      </p>
+      <p>
+        Past performance is no guarantee of future returns. Investing in securities involves risk, including the potential loss of principal. The wealth growth calculator displayed on this site is for illustrative and forecasting simulation purposes only and does not represent actual performance or guarantee specific financial payouts.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-between text-stone-400 pt-4 gap-4">
+        <span>© 2026 Aurelius Wealth Advisors LLC. All rights reserved.</span>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-gold-primary transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gold-primary transition-colors">Form ADV Part 2A</a>
+          <a href="#" class="hover:text-gold-primary transition-colors">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

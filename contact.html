@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Schedule a fiduciary financial consultation with Aurelius Wealth Advisors. Fill out our booking form or reach our San Francisco office.">
+  <title>Contact Us | Aurelius Wealth Advisors</title>
+  <!-- Tailwind CSS v4 Browser Compiler -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- Custom CSS style overrides -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-stone-warm text-slate-800 antialiased selection:bg-gold-primary/30 selection:text-emerald-deep">
+
+  <!-- Sticky Navigation Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 group">
+        <span class="font-serif text-2xl font-bold tracking-wider text-white group-hover:text-gold-light transition-colors">
+          AURELIUS
+        </span>
+        <span class="h-5 w-px bg-gold-primary/40 hidden sm:inline"></span>
+        <span class="text-[10px] tracking-[0.2em] font-sans text-gold-primary font-bold uppercase hidden sm:inline pt-0.5">
+          Wealth Advisors
+        </span>
+      </a>
+
+      <!-- Desktop Nav links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Home</a>
+        <a href="about.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">About Us</a>
+        <a href="services.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Services</a>
+        <a href="contact.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a href="contact.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold tracking-widest text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+          BOOK CONSULTATION
+        </a>
+      </div>
+
+      <!-- Hamburger button for mobile -->
+      <button id="mobile-menu-btn" class="md:hidden text-white hover:text-gold-primary focus:outline-none" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-emerald-deep/98 border-t border-emerald-medium shadow-2xl py-6 px-8 flex flex-col gap-4 transition-all duration-300 opacity-0 -translate-y-4">
+      <a href="index.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">Home</a>
+      <a href="about.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">About Us</a>
+      <a href="services.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">Services</a>
+      <a href="contact.html" class="font-sans text-base font-medium text-gold-primary border-b border-white/5 pb-2">Contact</a>
+      <a href="contact.html" class="mt-2 inline-flex items-center justify-center py-3 rounded-xl text-sm font-semibold tracking-wider text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all text-center">
+        Book Consultation
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Header Section -->
+  <section class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-16 bg-emerald-deep overflow-hidden">
+    <!-- Image background -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/office_hero.png" alt="Aurelius Office" class="w-full h-full object-cover opacity-20 mix-blend-overlay">
+      <div class="absolute inset-0 bg-gradient-to-t from-emerald-deep to-emerald-deep/90"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-12 text-center animate-fade-in-up">
+      <div class="inline-block px-3 py-1 bg-gold-primary/10 text-gold-light font-sans text-xs tracking-wider font-semibold rounded-full mb-4">
+        FIDUCIARY PARTNERSHIP
+      </div>
+      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white font-bold leading-tight mb-4">
+        Begin the Conversation
+      </h1>
+      <p class="font-sans text-base sm:text-lg text-stone-300 leading-relaxed max-w-2xl mx-auto">
+        Schedule an introductory consultation or contact our office team directly. We respond to all inquiries within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact & Schedule Section -->
+  <section class="py-24 px-6 md:px-12 bg-white relative z-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        
+        <!-- Left Column: Details & Map -->
+        <div class="lg:col-span-5 space-y-8 reveal-on-scroll opacity-0 translate-y-8">
+          <div class="space-y-4">
+            <h2 class="text-3xl text-emerald-deep font-bold font-serif">Office Headquarters</h2>
+            <div class="w-12 h-1 bg-gold-primary"></div>
+          </div>
+
+          <div class="space-y-6 text-sm font-sans text-slate-600 leading-relaxed">
+            <!-- Address -->
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 rounded-lg bg-emerald-deep/5 text-emerald-light flex items-center justify-center flex-shrink-0 mt-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800">Physical Address</h4>
+                <p class="mt-1">
+                  600 Montgomery St, 41st Floor<br>
+                  San Francisco, CA 94111
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone & Email -->
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 rounded-lg bg-emerald-deep/5 text-emerald-light flex items-center justify-center flex-shrink-0 mt-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800">Direct Contacts</h4>
+                <p class="mt-1">Phone: (415) 555-0190</p>
+                <p>Inquiries: info@aureliuswealth.com</p>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="flex gap-4 items-start">
+              <div class="w-8 h-8 rounded-lg bg-emerald-deep/5 text-emerald-light flex items-center justify-center flex-shrink-0 mt-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800">Business Hours</h4>
+                <p class="mt-1">Monday - Friday: 8:00 AM - 5:00 PM (PST)</p>
+                <p>Saturday - Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stylized Grayscale CSS Map Card -->
+          <div class="p-6 bg-stone-warm rounded-2xl border border-slate-200/60 shadow-lg relative overflow-hidden font-sans">
+            <h4 class="text-xs font-bold text-emerald-deep uppercase tracking-widest mb-3">Transit & Location Details</h4>
+            <div class="space-y-3 text-xs text-slate-600">
+              <div class="flex justify-between py-1.5 border-b border-slate-200/60">
+                <span>Building</span>
+                <span class="font-semibold text-slate-700">Transamerica Pyramid</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-slate-200/60">
+                <span>Coordinates</span>
+                <span class="font-mono text-slate-500">37.7952° N, 122.4028° W</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-slate-200/60">
+                <span>BART Transit</span>
+                <span class="font-semibold text-slate-700">Montgomery St Station (3-min walk)</span>
+              </div>
+              <div class="flex justify-between py-1.5">
+                <span>Client Parking</span>
+                <span class="font-semibold text-slate-700">Valet underground, Clay St entrance</span>
+              </div>
+            </div>
+            <!-- Diagonal map lines decorative element -->
+            <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-gold-primary/5 rounded-full border border-gold-primary/10"></div>
+          </div>
+        </div>
+
+        <!-- Right Column: Premium Booking Form -->
+        <div class="lg:col-span-7 bg-stone-warm p-8 rounded-3xl border border-slate-200/60 shadow-xl reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.15s;">
+          <h3 class="text-xl text-emerald-deep font-bold font-serif mb-6">Request Fiduciary Consultation</h3>
+          
+          <form class="mock-submit-form space-y-6 font-sans">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <!-- Name -->
+              <div class="space-y-2">
+                <label for="booking-name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Full Name</label>
+                <input type="text" id="booking-name" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary bg-white outline-none text-sm transition-all">
+              </div>
+              
+              <!-- Email -->
+              <div class="space-y-2">
+                <label for="booking-email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Email Address</label>
+                <input type="email" id="booking-email" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary bg-white outline-none text-sm transition-all">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <!-- Phone -->
+              <div class="space-y-2">
+                <label for="booking-phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Phone Number</label>
+                <input type="tel" id="booking-phone" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary bg-white outline-none text-sm transition-all">
+              </div>
+              
+              <!-- Assets Tier Dropdown -->
+              <div class="space-y-2">
+                <label for="booking-assets" class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Investable Assets</label>
+                <select id="booking-assets" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-primary bg-white outline-none text-sm cursor-pointer">
+                  <option value="under-250k">Under $250,000</option>
+                  <option value="250k-500k">$250,000 - $500,000</option>
+                  <option value="500k-1m" selected>$500,000 - $1,000,000</option>
+                  <option value="1m-5m">$1,000,000 - $5,000,000</option>
+                  <option value="over-5m">Over $5,000,000</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- PREMIUM INTERACTIVE CALENDAR BOOKER -->
+            <div class="space-y-3 pt-2">
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Select Preferred Meeting Date</label>
+              <!-- Hidden input holding selected date -->
+              <input type="hidden" id="selected-meeting-date" name="meeting_date">
+              
+              <!-- Date selection horizontal chips -->
+              <div id="date-chips-container" class="grid grid-cols-3 sm:grid-cols-5 gap-3">
+                <!-- Javascript will populate the next 5 business days dynamic tags -->
+              </div>
+            </div>
+
+            <!-- Time slot selection chips -->
+            <div id="time-slots-section" class="space-y-3 hidden transition-all duration-300">
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Select Preferred Time Slot (PST)</label>
+              <input type="hidden" id="selected-meeting-time" name="meeting_time">
+              
+              <div id="time-chips-container" class="grid grid-cols-4 gap-2">
+                <button type="button" data-time="09:00 AM" class="time-chip py-2 rounded-lg text-xs font-semibold border border-slate-300 hover:border-gold-primary hover:text-gold-dark transition-all text-center focus:outline-none bg-white">09:00 AM</button>
+                <button type="button" data-time="11:00 AM" class="time-chip py-2 rounded-lg text-xs font-semibold border border-slate-300 hover:border-gold-primary hover:text-gold-dark transition-all text-center focus:outline-none bg-white">11:00 AM</button>
+                <button type="button" data-time="02:00 PM" class="time-chip py-2 rounded-lg text-xs font-semibold border border-slate-300 hover:border-gold-primary hover:text-gold-dark transition-all text-center focus:outline-none bg-white">02:00 PM</button>
+                <button type="button" data-time="04:00 PM" class="time-chip py-2 rounded-lg text-xs font-semibold border border-slate-300 hover:border-gold-primary hover:text-gold-dark transition-all text-center focus:outline-none bg-white">04:00 PM</button>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="space-y-2">
+              <label for="booking-msg" class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Investment Goals (Optional)</label>
+              <textarea id="booking-msg" rows="3" placeholder="Briefly describe what you'd like to address (retirement, tax planning, asset location audit, business exit structure)..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary bg-white outline-none text-sm transition-all"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="w-full py-4 bg-emerald-deep hover:bg-emerald-medium text-white font-semibold text-sm tracking-widest uppercase rounded-xl transition-all duration-300 shadow-xl cursor-pointer">
+              REQUEST CONSULTATION
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-emerald-deep text-stone-300 pt-20 pb-10 px-6 md:px-12 border-t border-emerald-medium/30 relative z-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+      <!-- Info Column -->
+      <div class="md:col-span-4 space-y-6">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="font-serif text-2xl font-bold tracking-wider text-white">
+            AURELIUS
+          </span>
+        </a>
+        <p class="font-sans text-xs leading-relaxed text-stone-400">
+          Independent Wealth Management & Fiduciary Advisory. Serving high-net-worth families, entrepreneurs, and professional firms worldwide.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="w-8 h-8 rounded-full bg-emerald-medium flex items-center justify-center hover:bg-gold-primary hover:text-emerald-deep transition-all duration-300" aria-label="LinkedIn">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-emerald-medium flex items-center justify-center hover:bg-gold-primary hover:text-emerald-deep transition-all duration-300" aria-label="Twitter">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Column 1 -->
+      <div class="md:col-span-2 md:col-start-6 space-y-4">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Navigation</h4>
+        <ul class="space-y-2 text-xs font-sans">
+          <li><a href="index.html" class="hover:text-gold-primary transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-gold-primary transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-gold-primary transition-colors">Our Services</a></li>
+          <li><a href="contact.html" class="hover:text-gold-primary transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 2 -->
+      <div class="md:col-span-2 space-y-4">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Expertise</h4>
+        <ul class="space-y-2 text-xs font-sans text-stone-400">
+          <li>Wealth Planning</li>
+          <li>Retirement Strategy</li>
+          <li>Tax Advisory</li>
+          <li>Trust & Estate Plans</li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div class="md:col-span-3 space-y-4 text-xs font-sans">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Office Location</h4>
+        <p class="leading-relaxed">
+          600 Montgomery St, 41st Floor<br>
+          San Francisco, CA 94111
+        </p>
+        <p>
+          <span class="block">Inquiries: info@aureliuswealth.com</span>
+          <span class="block mt-1">Phone: (415) 555-0190</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Compliance Disclosures -->
+    <div class="max-w-7xl mx-auto pt-8 border-t border-emerald-medium/20 text-[10px] font-sans text-stone-500 leading-relaxed space-y-4">
+      <p>
+        Aurelius Wealth Advisors ("Aurelius") is an SEC registered investment advisor located in San Francisco, California. SEC registration does not imply a certain level of skill or training. Aurelius may only transact business in those states in which it is registered, or qualifies for an exemption or exclusion from registration requirements. The information contained herein should not be construed as personalized investment, tax, or legal advice. 
+      </p>
+      <p>
+        Past performance is no guarantee of future returns. Investing in securities involves risk, including the potential loss of principal. The wealth growth calculator displayed on this site is for illustrative and forecasting simulation purposes only and does not represent actual performance or guarantee specific financial payouts.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-between text-stone-400 pt-4 gap-4">
+        <span>© 2026 Aurelius Wealth Advisors LLC. All rights reserved.</span>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-gold-primary transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gold-primary transition-colors">Form ADV Part 2A</a>
+          <a href="#" class="hover:text-gold-primary transition-colors">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+  <!-- Self-contained page script for interactive meeting scheduler -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dateChipsContainer = document.getElementById('date-chips-container');
+      const timeSlotsSection = document.getElementById('time-slots-section');
+      const selectedDateInput = document.getElementById('selected-meeting-date');
+      const selectedTimeInput = document.getElementById('selected-meeting-time');
+      const timeChips = document.querySelectorAll('.time-chip');
+
+      if (!dateChipsContainer) return;
+
+      // 1. Generate next 5 business days (skipping Sat & Sun)
+      const businessDays = [];
+      let current = new Date();
+      // Start checking from tomorrow
+      while (businessDays.length < 5) {
+        current.setDate(current.getDate() + 1);
+        const dayOfWeek = current.getDay();
+        if (dayOfWeek !== 0 && dayOfWeek !== 6) { // 0 is Sun, 6 is Sat
+          businessDays.push(new Date(current));
+        }
+      }
+
+      // 2. Format names
+      const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+      // 3. Render date chip button tags
+      businessDays.forEach((date) => {
+        const dayName = days[date.getDay()];
+        const dateNum = date.getDate();
+        const monthName = months[date.getMonth()];
+        const fullDateStr = `${monthName} ${dateNum}, ${date.getFullYear()}`;
+
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'date-chip py-3 border border-slate-300 hover:border-gold-primary rounded-xl flex flex-col items-center bg-white text-center focus:outline-none transition-all cursor-pointer';
+        chip.innerHTML = `
+          <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-1">${dayName}</span>
+          <span class="text-base font-bold text-emerald-deep font-serif">${dateNum}</span>
+          <span class="text-[9px] uppercase font-bold text-slate-500 mt-0.5">${monthName}</span>
+        `;
+
+        chip.addEventListener('click', () => {
+          // Clear active states on dates
+          document.querySelectorAll('.date-chip').forEach(d => {
+            d.classList.remove('border-gold-primary', 'bg-gold-primary/5', 'ring-2', 'ring-gold-primary/30');
+            d.classList.add('border-slate-300', 'bg-white');
+          });
+
+          // Set active state on clicked date chip
+          chip.classList.remove('border-slate-300', 'bg-white');
+          chip.classList.add('border-gold-primary', 'bg-gold-primary/5', 'ring-2', 'ring-gold-primary/30');
+
+          // Store value
+          selectedDateInput.value = fullDateStr;
+
+          // Reveal time slots section with scroll transition
+          timeSlotsSection.classList.remove('hidden');
+          // Clear selected time if changing date
+          selectedTimeInput.value = '';
+          timeChips.forEach(t => t.classList.remove('bg-gold-primary', 'text-emerald-deep', 'border-gold-primary'));
+        });
+
+        dateChipsContainer.appendChild(chip);
+      });
+
+      // 4. Handle time slot chip clicks
+      timeChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          timeChips.forEach(c => {
+            c.classList.remove('bg-gold-primary', 'text-emerald-deep', 'border-gold-primary');
+            c.classList.add('bg-white', 'text-slate-800', 'border-slate-300');
+          });
+
+          chip.classList.remove('bg-white', 'text-slate-800', 'border-slate-300');
+          chip.classList.add('bg-gold-primary', 'text-emerald-deep', 'border-gold-primary');
+
+          selectedTimeInput.value = chip.getAttribute('data-time');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurelius Wealth Advisors - Premium independent financial planning, retirement preparation, and wealth management services built on a fiduciary standard.">
+  <title>Aurelius Wealth Advisors | Fiduciary Financial Advisory</title>
+  <!-- Tailwind CSS v4 Browser Compiler -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- Custom CSS style overrides -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-stone-warm text-slate-800 antialiased selection:bg-gold-primary/30 selection:text-emerald-deep">
+
+  <!-- Sticky Navigation Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 group">
+        <span class="font-serif text-2xl font-bold tracking-wider text-white group-hover:text-gold-light transition-colors">
+          AURELIUS
+        </span>
+        <span class="h-5 w-px bg-gold-primary/40 hidden sm:inline"></span>
+        <span class="text-[10px] tracking-[0.2em] font-sans text-gold-primary font-bold uppercase hidden sm:inline pt-0.5">
+          Wealth Advisors
+        </span>
+      </a>
+
+      <!-- Desktop Nav links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link font-sans text-sm font-medium tracking-wide text-white hover:text-gold-light transition-colors pb-1">Home</a>
+        <a href="about.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">About Us</a>
+        <a href="services.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Services</a>
+        <a href="contact.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a href="contact.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold tracking-widest text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+          BOOK CONSULTATION
+        </a>
+      </div>
+
+      <!-- Hamburger button for mobile -->
+      <button id="mobile-menu-btn" class="md:hidden text-white hover:text-gold-primary focus:outline-none" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-emerald-deep/98 border-t border-emerald-medium shadow-2xl py-6 px-8 flex flex-col gap-4 transition-all duration-300 opacity-0 -translate-y-4">
+      <a href="index.html" class="font-sans text-base font-medium text-gold-primary border-b border-white/5 pb-2">Home</a>
+      <a href="about.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">About Us</a>
+      <a href="services.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">Services</a>
+      <a href="contact.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">Contact</a>
+      <a href="contact.html" class="mt-2 inline-flex items-center justify-center py-3 rounded-xl text-sm font-semibold tracking-wider text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all text-center">
+        Book Consultation
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 bg-emerald-deep overflow-hidden">
+    <!-- Image background with luxury radial gradient mask -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/office_hero.png" alt="Aurelius Office Background" class="w-full h-full object-cover opacity-25 mix-blend-overlay">
+      <div class="absolute inset-0 bg-gradient-to-t from-emerald-deep via-emerald-deep/90 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-emerald-deep/60 via-transparent to-emerald-deep/60"></div>
+    </div>
+
+    <!-- Animated gold particle background details -->
+    <div class="absolute inset-0 opacity-15 pointer-events-none z-0">
+      <div class="absolute top-[20%] left-[10%] w-72 h-72 rounded-full bg-gold-primary/10 blur-[80px] animate-float"></div>
+      <div class="absolute bottom-[20%] right-[10%] w-96 h-96 rounded-full bg-emerald-light/20 blur-[100px] animate-float" style="animation-delay: 2s;"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full text-center md:text-left mt-8 md:mt-0">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 flex flex-col items-center md:items-start animate-fade-in-up">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold-primary/30 bg-gold-primary/5 text-gold-light mb-6">
+            <span class="w-2 h-2 rounded-full bg-gold-primary animate-ping"></span>
+            <span class="text-xs font-semibold tracking-widest font-sans uppercase">FIDUCIARY STANDARD OF EXCELLENCE</span>
+          </div>
+          
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-white font-bold leading-[1.15] mb-6">
+            Protecting & Growing Your <span class="text-gold-primary italic">Generational</span> Wealth
+          </h1>
+          
+          <p class="font-sans text-base sm:text-lg text-stone-300 leading-relaxed mb-8 max-w-xl">
+            Bespoke financial advisory, institutional wealth management, and retirement security strategies crafted carefully for families, executives, and business leaders.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold tracking-wider text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-gold-primary/15 transform hover:-translate-y-0.5">
+              Schedule Consultation
+            </a>
+            <a href="services.html" class="inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold tracking-wider text-white border border-white/20 hover:border-gold-primary hover:bg-white/5 transition-all duration-300">
+              Explore Our Expertise
+            </a>
+          </div>
+        </div>
+
+        <!-- Trust Badges Side Panel -->
+        <div class="lg:col-span-5 hidden lg:flex flex-col gap-6 animate-fade-in-up" style="animation-delay: 0.2s;">
+          <div class="glass-panel-dark p-6 rounded-2xl border border-white/10 shadow-2xl">
+            <div class="grid grid-cols-2 gap-8 text-left">
+              <div>
+                <p class="text-3xl font-serif font-bold text-gold-primary">$450M+</p>
+                <p class="text-xs font-sans text-stone-400 tracking-wider uppercase mt-1">Assets Under Advisement</p>
+              </div>
+              <div>
+                <p class="text-3xl font-serif font-bold text-gold-primary">98%</p>
+                <p class="text-xs font-sans text-stone-400 tracking-wider uppercase mt-1">Client Retention Rate</p>
+              </div>
+              <div>
+                <p class="text-3xl font-serif font-bold text-gold-primary">100%</p>
+                <p class="text-xs font-sans text-stone-400 tracking-wider uppercase mt-1">Fiduciary Accountability</p>
+              </div>
+              <div>
+                <p class="text-3xl font-serif font-bold text-gold-primary">25+</p>
+                <p class="text-xs font-sans text-stone-400 tracking-wider uppercase mt-1">Years Average Experience</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-white/5 flex items-center gap-4 text-xs font-sans text-stone-300">
+              <svg class="w-5 h-5 text-gold-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M2.166 11.388a.75.75 0 01.97-.53l1.523.516a.75.75 0 01.485.945L4.01 16.03a.75.75 0 01-1.442-.48l.56-1.683-1.433-.487a.75.75 0 01-.529-.974zm15.668-2.776a.75.75 0 01.97-.53l1.523.516a.75.75 0 01.485.945l-1.134 3.711a.75.75 0 01-1.442-.48l.56-1.683-1.433-.487a.75.75 0 01-.529-.974zM10 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1z" clip-rule="evenodd"></path>
+              </svg>
+              Registered SEC Investment Advisory firm committed strictly to fiduciary excellence.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Philosophy Section -->
+  <section class="py-24 px-6 md:px-12 bg-cream-light relative z-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll opacity-0 translate-y-8">
+        <h2 class="text-3xl sm:text-4xl text-emerald-deep font-bold mb-4">A Fiduciary Relationship Built on Trust</h2>
+        <div class="w-12 h-1 bg-gold-primary mx-auto mb-6"></div>
+        <p class="text-slate-600 font-sans text-base leading-relaxed">
+          Unlike transactional stockbrokers, we are bound by law to act as fiduciaries. We receive no product commission payouts, ensuring every piece of advice is independent.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-8">
+          <div class="w-12 h-12 rounded-xl bg-emerald-deep/5 flex items-center justify-center text-emerald-deep mb-6">
+            <svg class="w-6 h-6 text-emerald-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl text-emerald-deep font-bold mb-3">Absolute Fiduciary</h3>
+          <p class="text-slate-600 font-sans text-sm leading-relaxed">
+            Bound by legal and ethical duty to always put your best interest first, disclosing all fees and eliminating conflicts of interest.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.1s;">
+          <div class="w-12 h-12 rounded-xl bg-emerald-deep/5 flex items-center justify-center text-emerald-deep mb-6">
+            <svg class="w-6 h-6 text-emerald-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.003 9.003 0 1020.945 13H11V3.055z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl text-emerald-deep font-bold mb-3">Fee-Only Advisory</h3>
+          <p class="text-slate-600 font-sans text-sm leading-relaxed">
+            No hidden commissions, kickbacks, or investment product surcharges. Our simple asset-based fees align our growth directly with yours.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.2s;">
+          <div class="w-12 h-12 rounded-xl bg-emerald-deep/5 flex items-center justify-center text-emerald-deep mb-6">
+            <svg class="w-6 h-6 text-emerald-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl text-emerald-deep font-bold mb-3">Bespoke Strategies</h3>
+          <p class="text-slate-600 font-sans text-sm leading-relaxed">
+            We avoid cookie-cutter templates. Portfolios are constructed from the ground up matching your risk profile, tax scenario, and family legacy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Wealth Growth Calculator Section -->
+  <section class="py-24 px-6 md:px-12 bg-white relative z-20 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Content and inputs -->
+        <div class="lg:col-span-5 reveal-on-scroll opacity-0 translate-y-8">
+          <div class="inline-block px-3 py-1 bg-gold-primary/10 text-gold-dark font-sans text-xs tracking-wider font-semibold rounded-full mb-4">
+            FINANCIAL MATHEMATICS
+          </div>
+          <h2 class="text-3xl sm:text-4xl text-emerald-deep font-bold mb-4">Plan Your Path to Wealth</h2>
+          <p class="text-slate-600 font-sans text-sm sm:text-base leading-relaxed mb-8">
+            Compound interest is the eighth wonder of the world. Adjust the parameters below to see how consistent saving and intelligent market exposure can amplify your net worth.
+          </p>
+
+          <!-- Input Sliders Container -->
+          <div class="space-y-6">
+            <!-- Initial Investment Slider -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm font-sans">
+                <span class="font-medium text-slate-700">Initial Investment</span>
+                <span id="val-principal" class="font-bold text-emerald-deep">$50,000</span>
+              </div>
+              <input type="range" id="calc-principal" min="1000" max="500000" step="5000" value="50000" class="w-full">
+              <div class="flex justify-between text-[10px] text-slate-400 font-sans">
+                <span>$1,000</span>
+                <span>$500,000</span>
+              </div>
+            </div>
+
+            <!-- Monthly Contribution Slider -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm font-sans">
+                <span class="font-medium text-slate-700">Monthly Contribution</span>
+                <span id="val-monthly" class="font-bold text-emerald-deep">$1,000</span>
+              </div>
+              <input type="range" id="calc-monthly" min="0" max="5000" step="100" value="1000" class="w-full">
+              <div class="flex justify-between text-[10px] text-slate-400 font-sans">
+                <span>$0</span>
+                <span>$5,000 / mo</span>
+              </div>
+            </div>
+
+            <!-- Expected Return Rate Slider -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm font-sans">
+                <span class="font-medium text-slate-700">Expected Annual Return</span>
+                <span id="val-rate" class="font-bold text-emerald-deep">7.5%</span>
+              </div>
+              <input type="range" id="calc-rate" min="1" max="15" step="0.5" value="7.5" class="w-full">
+              <div class="flex justify-between text-[10px] text-slate-400 font-sans">
+                <span>1% (Conservative)</span>
+                <span>15% (Aggressive)</span>
+              </div>
+            </div>
+
+            <!-- Investment Period Slider -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm font-sans">
+                <span class="font-medium text-slate-700">Time Horizon</span>
+                <span id="val-years" class="font-bold text-emerald-deep">20 yrs</span>
+              </div>
+              <input type="range" id="calc-years" min="1" max="40" step="1" value="20" class="w-full">
+              <div class="flex justify-between text-[10px] text-slate-400 font-sans">
+                <span>1 Year</span>
+                <span>40 Years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graph Visualization -->
+        <div class="lg:col-span-7 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.15s;">
+          <div class="bg-stone-warm rounded-2xl p-6 border border-slate-200/60 shadow-xl relative">
+            
+            <!-- Result Numbers row -->
+            <div class="grid grid-cols-3 gap-2 sm:gap-4 mb-6 text-center">
+              <div class="p-3 bg-white rounded-xl border border-slate-100">
+                <span class="block text-[10px] uppercase font-sans text-slate-400 font-semibold tracking-wider">Contributions</span>
+                <span id="result-contributions" class="text-sm sm:text-base font-bold text-slate-700">$290,000</span>
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-100">
+                <span class="block text-[10px] uppercase font-sans text-slate-400 font-semibold tracking-wider">Interest Earned</span>
+                <span id="result-interest" class="text-sm sm:text-base font-bold text-gold-dark">$307,512</span>
+              </div>
+              <div class="p-3 bg-emerald-deep rounded-xl text-white">
+                <span class="block text-[10px] uppercase font-sans text-emerald-light font-semibold tracking-wider">Total Portfolio</span>
+                <span id="result-final-balance" class="text-sm sm:text-base font-bold text-gold-light">$597,512</span>
+              </div>
+            </div>
+
+            <!-- SVG Container -->
+            <div class="relative bg-white rounded-xl p-4 border border-slate-100 overflow-visible">
+              <svg id="growth-chart" class="w-full h-[280px] overflow-visible"></svg>
+            </div>
+
+            <!-- Legend -->
+            <div class="flex justify-center gap-6 mt-4 text-xs font-sans">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-sm bg-emerald-deep"></span>
+                <span class="text-slate-600 font-medium">Total Portfolio Value (Interest included)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-sm bg-gold-primary"></span>
+                <span class="text-slate-600 font-medium">Principal & Contributions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise Services Teaser -->
+  <section class="py-24 px-6 md:px-12 bg-cream-light relative z-20 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal-on-scroll opacity-0 translate-y-8">
+        <div>
+          <div class="inline-block px-3 py-1 bg-emerald-deep/5 text-emerald-light font-sans text-xs tracking-wider font-semibold rounded-full mb-4">
+            OUR SPECIALIZATIONS
+          </div>
+          <h2 class="text-3xl sm:text-4xl text-emerald-deep font-bold">Bespoke Family Office Capabilities</h2>
+          <div class="w-12 h-1 bg-gold-primary mt-4"></div>
+        </div>
+        <p class="text-slate-600 font-sans max-w-md mt-4 md:mt-0 leading-relaxed text-sm sm:text-base">
+          From retirement strategy to multi-generational estate plans, we coordinate all aspects of your financial ecosystem.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group reveal-on-scroll opacity-0 translate-y-8">
+          <div class="w-10 h-10 rounded-lg bg-emerald-deep/5 text-emerald-light flex items-center justify-center mb-6 group-hover:bg-emerald-deep group-hover:text-white transition-colors duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg text-emerald-deep font-bold mb-3">Wealth Management</h3>
+          <p class="text-slate-600 font-sans text-xs leading-relaxed mb-4">
+            Institutional-caliber portfolio construction tailored for risk tolerance, tax drag, and liquid asset goals.
+          </p>
+          <a href="services.html" class="inline-flex items-center text-xs font-semibold text-gold-dark hover:text-emerald-deep transition-colors gap-1 group-hover:gap-2">
+            Learn More
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.1s;">
+          <div class="w-10 h-10 rounded-lg bg-emerald-deep/5 text-emerald-light flex items-center justify-center mb-6 group-hover:bg-emerald-deep group-hover:text-white transition-colors duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-11.314l.707.707m12.02 12.02l.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg text-emerald-deep font-bold mb-3">Retirement Planning</h3>
+          <p class="text-slate-600 font-sans text-xs leading-relaxed mb-4">
+            Detailed asset accumulation calculations, distribution stress tests, and Social Security optimization guides.
+          </p>
+          <a href="services.html" class="inline-flex items-center text-xs font-semibold text-gold-dark hover:text-emerald-deep transition-colors gap-1 group-hover:gap-2">
+            Learn More
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.2s;">
+          <div class="w-10 h-10 rounded-lg bg-emerald-deep/5 text-emerald-light flex items-center justify-center mb-6 group-hover:bg-emerald-deep group-hover:text-white transition-colors duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg text-emerald-deep font-bold mb-3">Tax Strategy</h3>
+          <p class="text-slate-600 font-sans text-xs leading-relaxed mb-4">
+            Proactive tax-loss harvesting, capital gains management, and asset location strategies.
+          </p>
+          <a href="services.html" class="inline-flex items-center text-xs font-semibold text-gold-dark hover:text-emerald-deep transition-colors gap-1 group-hover:gap-2">
+            Learn More
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.3s;">
+          <div class="w-10 h-10 rounded-lg bg-emerald-deep/5 text-emerald-light flex items-center justify-center mb-6 group-hover:bg-emerald-deep group-hover:text-white transition-colors duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg text-emerald-deep font-bold mb-3">Estate Planning</h3>
+          <p class="text-slate-600 font-sans text-xs leading-relaxed mb-4">
+            Protect family inheritance. Structuring trusts, gifting channels, and coordinate with specialized attorneys.
+          </p>
+          <a href="services.html" class="inline-flex items-center text-xs font-semibold text-gold-dark hover:text-emerald-deep transition-colors gap-1 group-hover:gap-2">
+            Learn More
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="services.html" class="inline-flex items-center gap-2 text-sm font-semibold tracking-wider text-emerald-deep hover:text-gold-dark font-sans transition-all duration-300 group">
+          View All Services and Process Timeline 
+          <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials Slider Section -->
+  <section class="py-24 px-6 md:px-12 bg-emerald-deep text-white relative overflow-hidden z-20">
+    <div class="absolute inset-0 opacity-10">
+      <img src="assets/office_hero.png" alt="Office blur background" class="w-full h-full object-cover filter blur-sm">
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="inline-block px-3 py-1 bg-gold-primary/10 text-gold-light font-sans text-xs tracking-wider font-semibold rounded-full mb-4">
+          CLIENT ADVOCACY
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white">Endorsed by Families & Professionals</h2>
+        <div class="w-12 h-1 bg-gold-primary mx-auto mt-4"></div>
+      </div>
+
+      <!-- Testimonials Slider Container -->
+      <div class="min-h-[220px] md:min-h-[180px] flex items-center justify-center relative">
+        <div id="testimonial-container" class="w-full">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide transition-opacity duration-500 ease-in-out text-center">
+            <p class="font-serif text-lg sm:text-xl md:text-2xl italic text-stone-200 max-w-3xl mx-auto leading-relaxed">
+              "Aurelius completely restructured our family trust and legacy estate plan. The transition from our old brokerage firm was handled flawlessly. Their fee transparency and CFP fiduciary responsibility gave us true clarity."
+            </p>
+            <div class="mt-6">
+              <h4 class="font-sans text-sm font-bold tracking-widest uppercase text-gold-primary">Robert D.</h4>
+              <p class="font-sans text-xs text-stone-400 mt-1">Retired Technology VP • Client since 2018</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide hidden transition-opacity duration-500 ease-in-out text-center">
+            <p class="font-serif text-lg sm:text-xl md:text-2xl italic text-stone-200 max-w-3xl mx-auto leading-relaxed">
+              "As a busy medical practitioner, I have no time to track asset location and tax loss harvesting rules. The Aurelius advisors handle it pro-actively. They saved me tens of thousands in tax drag last year alone."
+            </p>
+            <div class="mt-6">
+              <h4 class="font-sans text-sm font-bold tracking-widest uppercase text-gold-primary">Dr. Sarah L.</h4>
+              <p class="font-sans text-xs text-stone-400 mt-1">Chief Orthopedic Surgeon • Client since 2020</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide hidden transition-opacity duration-500 ease-in-out text-center">
+            <p class="font-serif text-lg sm:text-xl md:text-2xl italic text-stone-200 max-w-3xl mx-auto leading-relaxed">
+              "Their growth forecasting model and financial audit was invaluable during my recent manufacturing business exit sale. It allowed us to structure our payouts to protect our proceeds."
+            </p>
+            <div class="mt-6">
+              <h4 class="font-sans text-sm font-bold tracking-widest uppercase text-gold-primary">Marcus K.</h4>
+              <p class="font-sans text-xs text-stone-400 mt-1">Founder, K-Sys Automotive • Client since 2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Navigation buttons -->
+      <div class="flex justify-center gap-4 mt-8">
+        <button id="prev-testimonial" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-gold-primary hover:text-gold-primary transition-colors text-white focus:outline-none" aria-label="Previous Testimonial">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <button id="next-testimonial" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-gold-primary hover:text-gold-primary transition-colors text-white focus:outline-none" aria-label="Next Testimonial">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA Section -->
+  <section class="py-16 px-6 md:px-12 bg-white relative z-20">
+    <div class="max-w-4xl mx-auto bg-stone-warm rounded-3xl p-8 sm:p-12 border border-slate-200/60 shadow-xl reveal-on-scroll opacity-0 translate-y-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <h3 class="text-2xl sm:text-3xl text-emerald-deep font-bold mb-3">Subscribe to Aurelius Insights</h3>
+        <p class="text-slate-600 font-sans text-xs sm:text-sm leading-relaxed mb-8">
+          Join our network of over 10,000 professional investors. Get quarterly reports on estate taxation updates, portfolio strategy adjustments, and macro-economics sent straight to your inbox.
+        </p>
+
+        <!-- Newsletter Mock Form -->
+        <form class="mock-submit-form flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input type="email" required placeholder="Enter your business email" class="flex-grow px-5 py-3.5 rounded-xl border border-slate-300 focus:border-gold-primary focus:ring-1 focus:ring-gold-primary outline-none font-sans text-sm bg-white">
+          <button type="submit" class="px-6 py-3.5 bg-emerald-deep hover:bg-emerald-medium text-white font-semibold text-sm tracking-wider font-sans rounded-xl transition-all duration-300 cursor-pointer shadow-lg">
+            SUBSCRIBE
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-emerald-deep text-stone-300 pt-20 pb-10 px-6 md:px-12 border-t border-emerald-medium/30 relative z-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+      <!-- Info Column -->
+      <div class="md:col-span-4 space-y-6">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="font-serif text-2xl font-bold tracking-wider text-white">
+            AURELIUS
+          </span>
+        </a>
+        <p class="font-sans text-xs leading-relaxed text-stone-400">
+          Independent Wealth Management & Fiduciary Advisory. Serving high-net-worth families, entrepreneurs, and professional firms worldwide.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="w-8 h-8 rounded-full bg-emerald-medium flex items-center justify-center hover:bg-gold-primary hover:text-emerald-deep transition-all duration-300" aria-label="LinkedIn">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-emerald-medium flex items-center justify-center hover:bg-gold-primary hover:text-emerald-deep transition-all duration-300" aria-label="Twitter">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Column 1 -->
+      <div class="md:col-span-2 md:col-start-6 space-y-4">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Navigation</h4>
+        <ul class="space-y-2 text-xs font-sans">
+          <li><a href="index.html" class="hover:text-gold-primary transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-gold-primary transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-gold-primary transition-colors">Our Services</a></li>
+          <li><a href="contact.html" class="hover:text-gold-primary transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 2 -->
+      <div class="md:col-span-2 space-y-4">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Expertise</h4>
+        <ul class="space-y-2 text-xs font-sans text-stone-400">
+          <li>Wealth Planning</li>
+          <li>Retirement Strategy</li>
+          <li>Tax Advisory</li>
+          <li>Trust & Estate Plans</li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div class="md:col-span-3 space-y-4 text-xs font-sans">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Office Location</h4>
+        <p class="leading-relaxed">
+          600 Montgomery St, 41st Floor<br>
+          San Francisco, CA 94111
+        </p>
+        <p>
+          <span class="block">Inquiries: info@aureliuswealth.com</span>
+          <span class="block mt-1">Phone: (415) 555-0190</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Compliance Disclosures (CRITICAL FOR FINANCE WEBSITES) -->
+    <div class="max-w-7xl mx-auto pt-8 border-t border-emerald-medium/20 text-[10px] font-sans text-stone-500 leading-relaxed space-y-4">
+      <p>
+        Aurelius Wealth Advisors ("Aurelius") is an SEC registered investment advisor located in San Francisco, California. SEC registration does not imply a certain level of skill or training. Aurelius may only transact business in those states in which it is registered, or qualifies for an exemption or exclusion from registration requirements. The information contained herein should not be construed as personalized investment, tax, or legal advice. 
+      </p>
+      <p>
+        Past performance is no guarantee of future returns. Investing in securities involves risk, including the potential loss of principal. The wealth growth calculator displayed on this site is for illustrative and forecasting simulation purposes only and does not represent actual performance or guarantee specific financial payouts.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-between text-stone-400 pt-4 gap-4">
+        <span>© 2026 Aurelius Wealth Advisors LLC. All rights reserved.</span>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-gold-primary transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gold-primary transition-colors">Form ADV Part 2A</a>
+          <a href="#" class="hover:text-gold-primary transition-colors">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+</body>
+</html>

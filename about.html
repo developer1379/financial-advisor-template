@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Aurelius Wealth Advisors - Our story, independent fiduciary standards, team credentials (CFP, CFA), and investment philosophy.">
+  <title>About Us | Aurelius Wealth Advisors</title>
+  <!-- Tailwind CSS v4 Browser Compiler -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- Custom CSS style overrides -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-stone-warm text-slate-800 antialiased selection:bg-gold-primary/30 selection:text-emerald-deep">
+
+  <!-- Sticky Navigation Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-4 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 group">
+        <span class="font-serif text-2xl font-bold tracking-wider text-white group-hover:text-gold-light transition-colors">
+          AURELIUS
+        </span>
+        <span class="h-5 w-px bg-gold-primary/40 hidden sm:inline"></span>
+        <span class="text-[10px] tracking-[0.2em] font-sans text-gold-primary font-bold uppercase hidden sm:inline pt-0.5">
+          Wealth Advisors
+        </span>
+      </a>
+
+      <!-- Desktop Nav links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Home</a>
+        <a href="about.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">About Us</a>
+        <a href="services.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Services</a>
+        <a href="contact.html" class="nav-link font-sans text-sm font-medium tracking-wide text-stone-300 hover:text-gold-light transition-colors pb-1">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a href="contact.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold tracking-widest text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+          BOOK CONSULTATION
+        </a>
+      </div>
+
+      <!-- Hamburger button for mobile -->
+      <button id="mobile-menu-btn" class="md:hidden text-white hover:text-gold-primary focus:outline-none" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-emerald-deep/98 border-t border-emerald-medium shadow-2xl py-6 px-8 flex flex-col gap-4 transition-all duration-300 opacity-0 -translate-y-4">
+      <a href="index.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">Home</a>
+      <a href="about.html" class="font-sans text-base font-medium text-gold-primary border-b border-white/5 pb-2">About Us</a>
+      <a href="services.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">Services</a>
+      <a href="contact.html" class="font-sans text-base font-medium text-stone-200 hover:text-gold-light border-b border-white/5 pb-2 transition-colors">Contact</a>
+      <a href="contact.html" class="mt-2 inline-flex items-center justify-center py-3 rounded-xl text-sm font-semibold tracking-wider text-emerald-deep bg-gold-primary hover:bg-gold-dark hover:text-white transition-all text-center">
+        Book Consultation
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Header Section -->
+  <section class="relative min-h-[50vh] flex items-center justify-center pt-32 pb-16 bg-emerald-deep overflow-hidden">
+    <!-- Image background -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/office_hero.png" alt="Aurelius Office" class="w-full h-full object-cover opacity-20 mix-blend-overlay">
+      <div class="absolute inset-0 bg-gradient-to-t from-emerald-deep to-emerald-deep/90"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-12 text-center animate-fade-in-up">
+      <div class="inline-block px-3 py-1 bg-gold-primary/10 text-gold-light font-sans text-xs tracking-wider font-semibold rounded-full mb-4">
+        OUR CORE IDENTITY
+      </div>
+      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white font-bold leading-tight mb-4">
+        Aligned With Your Success
+      </h1>
+      <p class="font-sans text-base sm:text-lg text-stone-300 leading-relaxed max-w-2xl mx-auto">
+        Aurelius was founded with a clear vision: to strip away corporate sales pressure and build a boutique advisory firm that acts solely as a fiduciary for its clients.
+      </p>
+    </div>
+  </section>
+
+  <!-- Story & Philosophy Section -->
+  <section class="py-24 px-6 md:px-12 bg-white relative z-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Portrait Column -->
+        <div class="lg:col-span-5 reveal-on-scroll opacity-0 translate-y-8">
+          <div class="relative">
+            <!-- Background gold frames -->
+            <div class="absolute -top-4 -left-4 w-full h-full border-2 border-gold-primary rounded-2xl -z-10"></div>
+            <img src="assets/advisor_portrait.png" alt="Arthur Aurelius, Founder" class="w-full rounded-2xl shadow-2xl z-10 relative">
+            <div class="absolute bottom-4 left-4 right-4 bg-emerald-deep/95 backdrop-blur-sm p-4 rounded-xl text-white border border-gold-primary/20">
+              <h3 class="font-serif text-base font-bold text-gold-light">Arthur Aurelius, CFP®</h3>
+              <p class="font-sans text-[10px] text-stone-400 tracking-wider uppercase mt-0.5">Founder & Principal Wealth Advisor</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Story Column -->
+        <div class="lg:col-span-7 space-y-6 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.15s;">
+          <h2 class="text-3xl text-emerald-deep font-bold leading-tight">The Origin of Our Fiduciary Promise</h2>
+          <div class="w-12 h-1 bg-gold-primary"></div>
+          
+          <p class="font-sans text-sm sm:text-base text-slate-600 leading-relaxed">
+            Prior to launching Aurelius, our founding team spent over two decades in major institutional brokerage firms. We witnessed firsthand how corporate sales quotas, proprietary product pushing, and hidden commission structures compromised client outcomes.
+          </p>
+          
+          <p class="font-sans text-sm sm:text-base text-slate-600 leading-relaxed">
+            We believed there was a better way—a structure where advice is paid for, not investment products. In 2012, we transitioned to a <strong>fee-only, Registered Investment Advisor (RIA)</strong> model. By operating under a fiduciary standard, we are legally bound to act in our clients' best interest in all scenarios.
+          </p>
+
+          <!-- Philosophy block quote -->
+          <div class="border-l-4 border-gold-primary pl-6 py-2 italic font-serif text-emerald-deep bg-stone-warm rounded-r-xl p-4">
+            "We do not sell products. We design blueprints for wealth preservation, tax mitigation, and financial independence. Our growth is entirely dependent on our clients' success."
+          </div>
+
+          <div class="grid grid-cols-2 gap-6 pt-4 text-xs font-sans text-slate-500">
+            <div class="flex gap-2 items-start">
+              <svg class="w-4 h-4 text-gold-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span><strong>CFP® Professionals:</strong> Adhering to strict continuous ethics & standards.</span>
+            </div>
+            <div class="flex gap-2 items-start">
+              <svg class="w-4 h-4 text-gold-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span><strong>CFA® Charterholders:</strong> Strict investment research excellence standards.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-24 px-6 md:px-12 bg-cream-light relative z-20 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal-on-scroll opacity-0 translate-y-8">
+        <div class="inline-block px-3 py-1 bg-emerald-deep/5 text-emerald-light font-sans text-xs tracking-wider font-semibold rounded-full mb-4">
+          EXPERTS ON YOUR SIDE
+        </div>
+        <h2 class="text-3xl sm:text-4xl text-emerald-deep font-bold">Meet Our Advisory Team</h2>
+        <div class="w-12 h-1 bg-gold-primary mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Team 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-md text-center hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8">
+          <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gold-primary p-0.5">
+            <img src="assets/advisor_portrait.png" alt="Arthur Aurelius" class="w-full h-full object-cover rounded-full">
+          </div>
+          <h3 class="text-lg text-emerald-deep font-bold font-serif">Arthur Aurelius, CFP®</h3>
+          <p class="text-xs text-gold-dark font-sans tracking-wide uppercase mt-1">Founder & Managing Director</p>
+          <p class="text-slate-500 font-sans text-xs leading-relaxed mt-4">
+            Arthur has over 22 years of experience designing multi-generational wealth preservation strategies for families.
+          </p>
+        </div>
+
+        <!-- Team 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-md text-center hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.1s;">
+          <div class="w-24 h-24 mx-auto rounded-full bg-slate-200 flex items-center justify-center mb-6 border-2 border-gold-primary p-0.5">
+            <!-- Icon/Silhouette fallback mockup representing a researcher -->
+            <svg class="w-12 h-12 text-emerald-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg text-emerald-deep font-bold font-serif">Helena Vance, CFA®</h3>
+          <p class="text-xs text-gold-dark font-sans tracking-wide uppercase mt-1">Head of Portfolio Strategy</p>
+          <p class="text-slate-500 font-sans text-xs leading-relaxed mt-4">
+            Helena oversees macro-economic research, tax location strategies, and global public equity allocations.
+          </p>
+        </div>
+
+        <!-- Team 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-md text-center hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8" style="transition-delay: 0.2s;">
+          <div class="w-24 h-24 mx-auto rounded-full bg-slate-200 flex items-center justify-center mb-6 border-2 border-gold-primary p-0.5">
+            <!-- Icon/Silhouette fallback mockup representing operations -->
+            <svg class="w-12 h-12 text-emerald-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg text-emerald-deep font-bold font-serif">Marcus Sterling, MBA</h3>
+          <p class="text-xs text-gold-dark font-sans tracking-wide uppercase mt-1">Director of Client Operations</p>
+          <p class="text-slate-500 font-sans text-xs leading-relaxed mt-4">
+            Marcus coordinates onboarding custody services (Fidelity & Schwab) and ongoing operational compliance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Accordion FAQ Section -->
+  <section class="py-24 px-6 md:px-12 bg-white relative z-20 border-t border-slate-100">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16 reveal-on-scroll opacity-0 translate-y-8">
+        <div class="inline-block px-3 py-1 bg-gold-primary/10 text-gold-dark font-sans text-xs tracking-wider font-semibold rounded-full mb-4">
+          CLEAR ANSWERS
+        </div>
+        <h2 class="text-3xl text-emerald-deep font-bold">Frequently Asked Questions</h2>
+        <div class="w-12 h-1 bg-gold-primary mx-auto mt-4"></div>
+      </div>
+
+      <div class="space-y-4 font-sans reveal-on-scroll opacity-0 translate-y-8">
+        <!-- FAQ 1 -->
+        <details class="group bg-stone-warm rounded-2xl border border-slate-200 overflow-hidden" open>
+          <summary class="flex justify-between items-center p-6 text-emerald-deep font-bold cursor-pointer font-serif text-sm sm:text-base select-none outline-none">
+            What is a fiduciary and why does it matter?
+            <span class="ml-4 transform group-open:rotate-180 transition-transform duration-200 text-gold-primary">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="p-6 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 bg-white">
+            A fiduciary is legal professional bound by the highest legal and ethical obligations to act solely in the best interests of their clients. Brokers, conversely, are held to a lower "suitability" standard, allowing them to sell higher-fee products if they fit your general profile. As fiduciaries, we must disclose all fees, avoid conflicts of interest, and seek best-execution.
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group bg-stone-warm rounded-2xl border border-slate-200 overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-emerald-deep font-bold cursor-pointer font-serif text-sm sm:text-base select-none outline-none">
+            How does your "fee-only" pricing work?
+            <span class="ml-4 transform group-open:rotate-180 transition-transform duration-200 text-gold-primary">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="p-6 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 bg-white">
+            Our advisory services are paid for through a simple Asset Under Management (AUM) billing percentage (typically starting at 1.00% annually for initial tiers and sliding lower as portfolio size increases). We never receive sales commissions, kickbacks from funds, or referrals from custodian brokers. This aligns our financial incentives directly with the growth of your investments.
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group bg-stone-warm rounded-2xl border border-slate-200 overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-emerald-deep font-bold cursor-pointer font-serif text-sm sm:text-base select-none outline-none">
+            Where are my portfolio assets physically held?
+            <span class="ml-4 transform group-open:rotate-180 transition-transform duration-200 text-gold-primary">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="p-6 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 bg-white">
+            Aurelius never takes physical custody of your wealth. All accounts are registered in your name and held at leading independent institutional custodians (Charles Schwab and Fidelity Clearing & Custody). You maintain ultimate control, receive statements directly from the custodian, and simply authorize Aurelius to manage allocations on your behalf.
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group bg-stone-warm rounded-2xl border border-slate-200 overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-emerald-deep font-bold cursor-pointer font-serif text-sm sm:text-base select-none outline-none">
+            Do you have an account minimum?
+            <span class="ml-4 transform group-open:rotate-180 transition-transform duration-200 text-gold-primary">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="p-6 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 bg-white">
+            Generally, we establish accounts for families with a minimum of $500,000 in investable assets. However, we sometimes waive this minimum for young professionals or executives on high wealth-accumulation trajectories. Contact us to discuss your individual situation.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-emerald-deep text-stone-300 pt-20 pb-10 px-6 md:px-12 border-t border-emerald-medium/30 relative z-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+      <!-- Info Column -->
+      <div class="md:col-span-4 space-y-6">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="font-serif text-2xl font-bold tracking-wider text-white">
+            AURELIUS
+          </span>
+        </a>
+        <p class="font-sans text-xs leading-relaxed text-stone-400">
+          Independent Wealth Management & Fiduciary Advisory. Serving high-net-worth families, entrepreneurs, and professional firms worldwide.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="w-8 h-8 rounded-full bg-emerald-medium flex items-center justify-center hover:bg-gold-primary hover:text-emerald-deep transition-all duration-300" aria-label="LinkedIn">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-emerald-medium flex items-center justify-center hover:bg-gold-primary hover:text-emerald-deep transition-all duration-300" aria-label="Twitter">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Column 1 -->
+      <div class="md:col-span-2 md:col-start-6 space-y-4">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Navigation</h4>
+        <ul class="space-y-2 text-xs font-sans">
+          <li><a href="index.html" class="hover:text-gold-primary transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-gold-primary transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-gold-primary transition-colors">Our Services</a></li>
+          <li><a href="contact.html" class="hover:text-gold-primary transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 2 -->
+      <div class="md:col-span-2 space-y-4">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Expertise</h4>
+        <ul class="space-y-2 text-xs font-sans text-stone-400">
+          <li>Wealth Planning</li>
+          <li>Retirement Strategy</li>
+          <li>Tax Advisory</li>
+          <li>Trust & Estate Plans</li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div class="md:col-span-3 space-y-4 text-xs font-sans">
+        <h4 class="font-sans text-xs font-bold text-white tracking-widest uppercase">Office Location</h4>
+        <p class="leading-relaxed">
+          600 Montgomery St, 41st Floor<br>
+          San Francisco, CA 94111
+        </p>
+        <p>
+          <span class="block">Inquiries: info@aureliuswealth.com</span>
+          <span class="block mt-1">Phone: (415) 555-0190</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Compliance Disclosures -->
+    <div class="max-w-7xl mx-auto pt-8 border-t border-emerald-medium/20 text-[10px] font-sans text-stone-500 leading-relaxed space-y-4">
+      <p>
+        Aurelius Wealth Advisors ("Aurelius") is an SEC registered investment advisor located in San Francisco, California. SEC registration does not imply a certain level of skill or training. Aurelius may only transact business in those states in which it is registered, or qualifies for an exemption or exclusion from registration requirements. The information contained herein should not be construed as personalized investment, tax, or legal advice. 
+      </p>
+      <p>
+        Past performance is no guarantee of future returns. Investing in securities involves risk, including the potential loss of principal. The wealth growth calculator displayed on this site is for illustrative and forecasting simulation purposes only and does not represent actual performance or guarantee specific financial payouts.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-between text-stone-400 pt-4 gap-4">
+        <span>© 2026 Aurelius Wealth Advisors LLC. All rights reserved.</span>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-gold-primary transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gold-primary transition-colors">Form ADV Part 2A</a>
+          <a href="#" class="hover:text-gold-primary transition-colors">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
